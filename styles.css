@@ -1,0 +1,379 @@
+html {
+    box-sizing: border-box;
+    font-size: 16px;
+  }
+  
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+  
+  body, h1, h2, h3, h4, h5, h6, p, ol, ul {
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+    font-family: 'Lato', sans-serif;
+  }
+  
+  ol, ul {
+    list-style: none;
+  }
+  
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+a {
+    text-decoration: none;  
+}
+
+.navigationContainer{
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+}
+
+.navigationLogoContaienr{
+    display: flex;
+    align-items: center;
+    background: linear-gradient(135deg, #f23081 23%,#ff3838 100%);
+}
+
+.navigationLogo{
+    width: 100px;
+    padding: 10px;
+}
+
+.upperNavigationContainer{
+    display: flex;
+
+}
+
+.navigationContentContainer{
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+}
+.upperNavigation {
+    background-color: #131313;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex: 1;
+}
+
+.upperNavigation li {
+    padding: 5px 16px;
+}
+
+.upperNavigation li a {
+    font-family: 'Lato', sans-serif;
+    color: hsla(0,0%,100%,.6);
+}
+
+.loverNavigationContainer {
+    display: flex;
+}
+
+.loverNavigation {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex: 1;
+    padding: 12px 0px;
+}
+
+.loverNavigation li a {
+    font-family: 'Hind', sans-serif;
+    text-transform: uppercase;
+    padding: 12px 0px 0px 0px;
+    margin-left: 16px;
+    color: #555
+}
+.navSearchBox {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    padding: 12px;
+    border-left: 1px solid #dedede;
+    color: #cecece;
+}
+
+.navCallToAction {
+    background-color: rgb(255, 221, 51);
+    color: #000;
+    padding: 6px 16px;
+
+}
+.mainContent{
+    padding: 5px 10px;
+}
+.mainContentHero{
+    display: flex;
+    flex: 1;
+}
+
+.mainContentHeroLeftTile{
+    flex: 2;
+    position: relative;
+    background: url('https://source.unsplash.com/random/1024x860') center center no-repeat;
+    background-size: cover;
+    z-index: -2;
+    color: #fff;
+    margin-right: 5px;
+}   
+.mainContentHeroLeftTile::before{
+    content: '';
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background-image: linear-gradient(180deg,#ff0505,#080808);
+    opacity: .6; 
+    z-index: -1;
+}
+
+.mainContentHeroRightTiles{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.mainContentHeroLeftTileHeader{
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 150px;
+}
+
+.mainContentHeroLeftTileHeader svg{
+ flex: 1;
+ max-width: 400px;
+ height: auto;
+ padding: 10px 80px 10px 10px;
+
+}
+.mainContentHeroLeftTileHeader p{
+   margin: 20px 20px 0px 0px;
+}
+
+.mainContentHeroMainTileFooter {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 10px 0px 5px 20px;
+}
+
+.mainContentHeroMainTileFooter p {
+    margin: 8px;
+}
+
+.mainContentHeroSmallTileFooter {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 10px 0px 5px 10px;
+}
+
+.mainContentHeroSmallTileFooter p {
+    margin: 6px;
+}
+
+.mainContentHeroLeftTileFooter p{
+    padding-right: 10px;
+}
+
+.mainContentHeroLeftTileTitle {
+    margin: 20px
+}
+
+.mainContentHeroLeftTileTitle a {
+    color: #fff;
+    font-size: 48px;
+    font-weight: bold;
+}
+
+.mainContentHeroRightTile {
+    display: flex;
+    flex: 2;
+    position: relative;
+    background: url('https://source.unsplash.com/random/800x600') center center no-repeat;
+    background-size: cover;
+    z-index: -2;
+    color: #fff;
+    align-items: flex-end;
+}
+.mainContentHeroRightTile::before{
+    content: '';
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background-image: linear-gradient(180deg,#ffffff00,#080808);
+    opacity: .6; 
+    z-index: -1;
+}
+
+.mainContentHeroRightTilesFirst{
+    display: flex;
+    flex: 1;
+    margin-bottom: 5px;
+}
+
+.mainContentHeroRightTileContent{
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+}
+
+.mainContentHeroRightTileTitle{
+    margin: 0px 10px;
+}
+
+.mainContentHeroRightTileTitle a {
+    color: #fff;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.mainContentHeroRightTilesSecond{
+    display: flex;
+    flex: 1;
+}
+
+.newsContainer {
+    display: flex;
+    max-width: 1192px;
+    margin: 50px auto;
+    flex-direction: column;
+}
+
+.newsHeaderTitle {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.newsHeaderTitle h2 {
+    color: #f42;
+    font-weight: bold;
+}
+
+.newsHeaderTitleArrow{
+    margin: 2px 0px 0px 5px;
+}
+
+.newsContentRow{
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+}
+
+.newsContentCard{
+    margin: 30px 20px 0px 0px;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.newsContentCard h3{
+    font-weight: bold;
+    margin: 10px 0px;
+}
+
+.newsContainer p {
+    color: #aaa;
+}
+
+.upperFooter{
+    background-color: #131313; 
+}
+
+.upperFooter ul {
+    display: flex;
+    align-items: center;
+    flex: 1;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.upperFooter ul li a{
+    font-family: 'Hind', sans-serif;
+    text-transform: uppercase;
+    padding: 12px 0px 0px 0px;
+    margin-left: 16px;
+    color: #aaa;
+}
+
+.upperFooterSocialContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 20px;
+}
+
+.upperFooterSocialContainer div{
+    display: flex;
+    background-color: rgba(255, 255, 255, 0.2);
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+}
+
+.upperFooterSocialContainer div i {
+    color: #fff;
+    font-size: 20px;
+}
+
+.upperFooterLinks{
+    padding-bottom: 20px;
+}
+
+.loverFooter{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: #000;
+    padding: 20px;
+}
+
+.loverFooter i {
+    margin: 2px 6px 0px 6px;
+}
+.loverFooter p {
+    color: #aaa;
+}
+
+.fa-heart{
+    color: #ff0505;
+}
+
+.fa-laptop{
+    color: #fff;
+}
+
+@media screen and (max-width: 720px) {
+    .mainContentHero {
+        flex-direction: column;
+    }
+    .mainContentHeroRightTiles {
+        margin: 5px 5px 0px 0px;
+    }
+    .mainContentHeroRightTileTitle{
+        margin-top: 60px;
+    }
+   
+}
+
+@media screen and (min-width: 950px) {
+    .navigationLogoContaienr{
+        display: none;
+    }
+}
